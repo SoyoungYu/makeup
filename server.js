@@ -16,7 +16,7 @@ app.get('/', (req, res)=>{
 app.get('/makeup', (req, res)=>{
     res.sendFile(path.join(__dirname, 'views', 'test02.html'));
 })
-app.get('/sub', (req, res)=>{
+app.get('/subpage', (req, res)=>{
     res.sendFile(path.join(__dirname, 'views', 'sub.html'));
 })
 app.get('/about', (req, res)=>{
