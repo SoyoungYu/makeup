@@ -9,6 +9,10 @@ app.listen(PORT, ()=>{
     console.log('server listening ' + PORT);
 });
 
+app.get('/', (req, res)=>{
+    res.sendFile(path.join(__dirname, 'views', 'index.html'));
+})
+
 app.get('/makeup', (req, res)=>{
     res.sendFile(path.join(__dirname, 'views', 'test02.html'));
 })
